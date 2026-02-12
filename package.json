@@ -1,13 +1,10 @@
 {
   "name": "firecrawl-stealth-mcp",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Firecrawl MCP server with stealth and extended capabilities",
   "type": "module",
   "bin": {
-    "firecrawl-stealth-mcp": "./index.ts"
-  },
-  "scripts": {
-    "start": "node --loader ts-node/esm index.ts"
+    "firecrawl-stealth-mcp": "./index.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.1",
