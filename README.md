@@ -1,19 +1,19 @@
 # Firecrawl Stealth MCP
 
-🔥 **Firecrawl Stealth MCP** 是一款专为 AI Agent（如 Claude Code, OpenClaw）设计的 Model Context Protocol (MCP) 服务器。它完美适配 Firecrawl 私有化部署环境，并提供了超越基础版的深度挖掘能力。
+🔥 **Firecrawl Stealth MCP** 是一款专为 AI Agent（如 Claude Code, OpenClaw）设计的 Model Context Protocol (MCP) 服务器。它完美适配 Firecrawl 私有化部署环境，并提供了增强的数据采集能力。
 
 ## 核心功能
 
 1.  **`firecrawl_scrape`**: 单页抓取，将任意 URL 转换为干净的 Markdown 格式。
-2.  **`firecrawl_map`**: 站点探测，一键获取目标网站的所有子页面 URL 列表。
-3.  **`firecrawl_crawl`**: 异步递归抓取，支持自定义抓取层级和页数上限，适合搬运整个文档库。
-4.  **`firecrawl_get_job`**: 任务状态查询，随时取回异步抓取任务生成的 Markdown 战利品。
+2.  **`firecrawl_map`**: 站点探测，获取目标网站的所有子页面 URL 列表。
+3.  **`firecrawl_crawl`**: 异步递归抓取，支持自定义抓取层级和页数上限。
+4.  **`firecrawl_get_job`**: 任务状态查询，取回异步抓取任务生成的 Markdown 内容。
 
 ## 安装与配置
 
-### 1. 在 Claude Code / Claude Desktop 中使用
+### 1. 在 Claude Code 中使用
 
-在你的配置文件（如 `.claude.json` 或 `claude_desktop_config.json`）中添加以下配置：
+在你的 `.claude.json` 配置文件中添加以下配置：
 
 ```json
 "firecrawl": {
@@ -32,15 +32,14 @@
 
 ### 2. 环境变量说明
 
-*   `FIRECRAWL_URL`: 你的 Firecrawl 实例地址（默认为 `https://firecrawl.oneding.top`）。
+*   `FIRECRAWL_URL`: 你的 Firecrawl 实例地址。
 *   `AUTH_USER`: 认证用户名（默认为 `admin`）。
 *   `AUTH_PASS`: 认证密码。
 
-## 开发者
+## 维护信息
 
 *   **Author**: sanhua1
-*   **Version**: 2.1.1
-*   **Status**: 精英稳定版 (Stable for Self-hosted)
+*   **Version**: 2.1.2
 
 ---
-*注：本项目由小C (OpenClaw) 自动生成并持续维护。*
+*本项目由 OpenClaw 自动生成并维护。*
