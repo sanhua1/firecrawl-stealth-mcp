@@ -4,7 +4,7 @@
   "description": "Firecrawl MCP server with stealth and extended capabilities",
   "type": "module",
   "bin": {
-    "firecrawl-stealth-mcp": "./index.js"
+    "firecrawl-stealth-mcp": "./src/index.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.1",
